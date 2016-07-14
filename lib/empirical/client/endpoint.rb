@@ -48,7 +48,7 @@ module Empirical
 
         # finds an item for a single id
         def find(id, params = {})
-          item = new(id: id)
+          item = new(uid: id)
           item.request(:get, "#{endpoint_path}/#{id}")
         end
 
